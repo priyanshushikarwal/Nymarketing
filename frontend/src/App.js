@@ -1,6 +1,7 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Lenis from "lenis";
 import "@/App.css";
+import Loader from "@/components/landing/Loader";
 import Nav from "@/components/landing/Nav";
 import Hero from "@/components/landing/Hero";
 import Trust from "@/components/landing/Trust";
@@ -14,6 +15,13 @@ import About from "@/components/landing/About";
 import Footer from "@/components/landing/Footer";
 
 function App() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => setLoading(false), 1600);
+    return () => clearTimeout(timer);
+  }, []);
+
   useEffect(() => {
     const lenis = new Lenis({ duration: 1.15, smoothWheel: true });
     let raf;
@@ -43,6 +51,7 @@ function App() {
 
   return (
     <div className="min-h-screen bg-[#F9F8F5] text-[#0F0F10] antialiased selection:bg-[#16A34A] selection:text-white">
+      <Loader show={loading} />
       <Nav />
       <main>
         <Hero />

@@ -29,6 +29,12 @@ Build a landing page based on a reference image (Mark.Media style) for a digital
 - Generator script: /app/backend/gen_mascots.py (rerun to regenerate)
 - .animate-bob keyframes in index.css give all mascots a gentle float
 
+## Creature Set + Loader (2026-07, Priyanshu)
+- User uploaded reference images (hyperreal octopus / dolphin / turtle-warrior on white bg) and asked for mascots in that style
+- Generated 6 hyperreal creature mascots (charcoal + emerald, white bg) via /app/backend/gen_creatures.py: octopus (Social Media + Trust section), dolphin (Performance + Work heading), turtle warrior (AI service + Process heading), chameleon (Branding), parrot with camera (Content & Reels), owl with laptop (Websites)
+- Each of the 6 service cards now shows its creature (top-right, hover tilt/zoom, mix-blend-multiply to blend white bg)
+- Loader.jsx: full-screen cameo on page load — waving mascot badge + "NY Marketing." wiggle, slides up after ~1.6s (App.js state)
+
 ## Architecture
 - Frontend-only React SPA (no backend endpoints used; buttons are mailto/anchor based)
 - Stack: React 19, Tailwind CSS v3, framer-motion 11, lenis (smooth momentum scrolling), lucide-react icons

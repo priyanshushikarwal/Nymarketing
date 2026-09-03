@@ -23,8 +23,14 @@ export default function Work() {
   return (
     <section id="work" data-testid="work-section" className="scroll-mt-24 bg-white">
       <div className="mx-auto max-w-7xl px-4 py-20 sm:px-8 sm:py-28">
-        <FadeUp>
+        <FadeUp className="relative">
           <p className="eyebrow">/04 — Selected work</p>
+          <img
+            src="/assets/dolphin.png"
+            alt="Dolphin character leaping upward"
+            data-testid="work-mascot"
+            className="animate-bob pointer-events-none absolute -top-16 right-0 hidden h-36 w-44 object-contain mix-blend-multiply lg:block"
+          />
           <h2 className="mt-3 font-display text-3xl font-bold leading-[1.05] tracking-tight text-neutral-900 sm:text-5xl">
             Real Brands. Real Campaigns.{" "}
             <span className="text-[#16A34A]">Real Growth.</span>
