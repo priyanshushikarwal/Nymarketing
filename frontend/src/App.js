@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import Lenis from "lenis";
 import "@/App.css";
 import Loader from "@/components/landing/Loader";
+import ScrollChase from "@/components/landing/ScrollChase";
 import Nav from "@/components/landing/Nav";
 import Hero from "@/components/landing/Hero";
 import Trust from "@/components/landing/Trust";
@@ -52,6 +53,7 @@ function App() {
   return (
     <div className="min-h-screen bg-[#F9F8F5] text-[#0F0F10] antialiased selection:bg-[#16A34A] selection:text-white">
       <Loader show={loading} />
+      <ScrollChase />
       <Nav />
       <main>
         <Hero />
