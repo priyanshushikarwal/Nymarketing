@@ -49,12 +49,12 @@ export default function Stats() {
         <div className="mt-12 grid grid-cols-1 gap-px overflow-hidden rounded-3xl bg-neutral-800 sm:mt-16 sm:grid-cols-2 lg:grid-cols-4">
           {metrics.map((m, i) => (
             <FadeUp key={m.label} delay={i * 0.08} className="bg-[#0D0D0E]">
-              <div className="flex h-full flex-col justify-between gap-8 p-8">
-                <span className="font-mono text-[10px] uppercase tracking-[0.25em] text-neutral-500">
+              <div className="flex h-full flex-col justify-between gap-10 p-8 sm:p-10">
+                <span className="font-mono text-[11px] uppercase leading-relaxed tracking-[0.2em] text-neutral-500">
                   /0{i + 1}
                 </span>
                 <div>
-                  <p className="font-display text-4xl font-extrabold tracking-tight sm:text-5xl">
+                  <p className="font-display text-4xl font-extrabold leading-[1.15] tracking-tight sm:text-5xl">
                     <CountUp
                       to={m.to}
                       decimals={m.decimals}

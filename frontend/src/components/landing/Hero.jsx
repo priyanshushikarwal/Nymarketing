@@ -54,12 +54,14 @@ export default function Hero() {
 
         <FadeUp delay={0.45} className="lg:col-span-3">
           <div className="flex h-full flex-col justify-between gap-10 rounded-[2rem] border border-neutral-200/70 bg-white/70 p-6 backdrop-blur-sm sm:p-7">
-            <div className="flex items-start gap-4">
-              <span className="font-display text-6xl font-extrabold leading-none tracking-tight">
-                AI
-              </span>
-              <span className="mt-4 h-1 w-10 shrink-0 bg-neutral-900" />
-              <p className="text-sm leading-snug text-neutral-500">
+            <div>
+              <div className="flex items-center gap-4">
+                <span className="font-display text-6xl font-extrabold leading-none tracking-tight">
+                  AI
+                </span>
+                <span className="h-1 w-10 shrink-0 bg-neutral-900" />
+              </div>
+              <p className="mt-3 max-w-[16rem] text-sm leading-snug text-neutral-500">
                 Unlocking transformative potential with AI-driven marketing
               </p>
             </div>

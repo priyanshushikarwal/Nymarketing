@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
-import { Sparkles, TrendingUp } from "lucide-react";
+import { Sparkles } from "lucide-react";
 
 const stars = [
   { top: "10%", left: "14%" },
@@ -70,15 +70,6 @@ export default function OrbCard() {
           className="orb-core h-40 w-40 rounded-full transition-transform duration-500 group-hover:scale-105 sm:h-52 sm:w-52"
         />
       </div>
-
-      <motion.div
-        animate={{ y: [0, -8, 0] }}
-        transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-        className="absolute left-4 top-20 z-20 flex items-center gap-2 rounded-full border border-white/15 bg-white/10 px-3 py-1.5 backdrop-blur-md sm:left-6 sm:top-24"
-      >
-        <TrendingUp size={13} className="text-[#FF5E3A]" />
-        <span className="text-xs font-semibold">4.8x ROAS</span>
-      </motion.div>
 
       <div className="relative z-10 flex items-end justify-between gap-4">
         <div>

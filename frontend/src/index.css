@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -24,7 +24,7 @@ body::after {
 }
 
 .font-display {
-    font-family: 'Syne', sans-serif;
+    font-family: 'Bricolage Grotesque', 'Plus Jakarta Sans', sans-serif;
 }
 
 .font-mono {
