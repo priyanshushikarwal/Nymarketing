@@ -1,73 +1,137 @@
-import { ArrowUpRight, Instagram, Linkedin, Twitter } from "lucide-react";
+import { ArrowUpRight, Instagram, Linkedin, Mail, MessageCircle } from "lucide-react";
 import { MaskedLine, FadeUp } from "./motion-primitives";
+
+const serviceLinks = [
+  "Social Media Marketing",
+  "Performance Marketing",
+  "Branding & Creative",
+  "Content & Reels",
+  "Web Development",
+  "AI-Powered Marketing",
+];
+
+const companyLinks = [
+  { label: "About", href: "#about" },
+  { label: "Work", href: "#work" },
+  { label: "Process", href: "#process" },
+  { label: "Contact", href: "#contact" },
+];
 
 export default function Footer() {
   return (
     <footer id="contact" data-testid="footer-section" className="scroll-mt-24 bg-[#0D0D0E] text-white">
       <div className="mx-auto max-w-7xl px-4 py-20 sm:px-8 sm:py-28">
         <FadeUp>
-          <p className="eyebrow !text-neutral-500">/04 — Say hello</p>
+          <p className="eyebrow !text-neutral-500">/08 — Say hello</p>
         </FadeUp>
 
-        <h2 className="mt-6 font-display text-4xl font-extrabold uppercase leading-[1.0] tracking-tight sm:text-6xl lg:text-7xl">
-          <MaskedLine delay={0.1}>Let&apos;s build Jaipur&apos;s</MaskedLine>
+        <h2 className="mt-6 font-display text-4xl font-extrabold leading-[1.0] tracking-tight sm:text-6xl">
+          <MaskedLine delay={0.1}>Ready to Make Your</MaskedLine>
           <MaskedLine delay={0.22}>
-            next big brand<span className="text-[#FF4D2D]">.</span>
+            Marketing <span className="text-[#22C55E]">Work Harder?</span>
           </MaskedLine>
         </h2>
 
         <FadeUp delay={0.35} className="mt-8 max-w-md">
           <p className="text-sm leading-relaxed text-neutral-400 sm:text-base">
-            One conversation is all it takes. Tell us where your brand is today —
-            we&apos;ll show you exactly where AI-driven marketing can take it.
+            Tell us where your business is today. We'll show you where it could
+            go next.
           </p>
         </FadeUp>
 
-        <FadeUp delay={0.45} className="mt-10 flex flex-wrap items-center gap-4">
+        <FadeUp delay={0.45} className="mt-10 flex flex-wrap items-center gap-5">
           <a
-            href="mailto:hello@nymarketinggroups.com?subject=Schedule%20a%20Demo"
-            data-testid="footer-demo-button"
-            className="btn-pill-light"
+            href="mailto:hello@nymarketing.com?subject=Free%20Strategy%20Call"
+            data-testid="footer-cta-button"
+            className="inline-flex items-center gap-2 rounded-full bg-[#16A34A] px-6 py-3 text-sm font-semibold text-white transition-colors duration-300 hover:bg-[#15803D]"
           >
-            Schedule a Demo
+            Get a Free Strategy Call
             <ArrowUpRight size={16} />
           </a>
-          <a href="#services" data-testid="footer-explore-button" className="btn-pill-outline">
-            Explore Services
-          </a>
+          <p className="text-sm text-neutral-500">
+            No generic marketing pitch. Just a conversation about your growth.
+          </p>
         </FadeUp>
 
-        <div className="mt-16 flex flex-col gap-6 border-t border-neutral-800 pt-8 text-sm text-neutral-500 sm:flex-row sm:items-center sm:justify-between">
-          <span>© 2026 nymarketinggroups — Jaipur, Rajasthan, India</span>
-          <span className="font-mono text-xs tracking-wide">
-            hello@nymarketinggroups.com · +91 98290 00000
-          </span>
-          <div className="flex items-center gap-3">
-            <a
-              href="#hero"
-              data-testid="footer-social-instagram"
-              aria-label="Instagram"
-              className="grid h-10 w-10 place-items-center rounded-full border border-neutral-700 transition-colors duration-300 hover:border-white hover:bg-white hover:text-neutral-950"
-            >
-              <Instagram size={16} />
-            </a>
-            <a
-              href="#hero"
-              data-testid="footer-social-linkedin"
-              aria-label="LinkedIn"
-              className="grid h-10 w-10 place-items-center rounded-full border border-neutral-700 transition-colors duration-300 hover:border-white hover:bg-white hover:text-neutral-950"
-            >
-              <Linkedin size={16} />
-            </a>
-            <a
-              href="#hero"
-              data-testid="footer-social-twitter"
-              aria-label="Twitter"
-              className="grid h-10 w-10 place-items-center rounded-full border border-neutral-700 transition-colors duration-300 hover:border-white hover:bg-white hover:text-neutral-950"
-            >
-              <Twitter size={16} />
-            </a>
+        <div className="mt-20 grid grid-cols-2 gap-10 border-t border-neutral-800 pt-12 sm:grid-cols-4">
+          <div className="col-span-2 sm:col-span-1">
+            <p className="font-display text-lg font-extrabold tracking-tight">
+              NY Marketing<span className="text-[#22C55E]">.</span>
+            </p>
+            <p className="mt-2 text-sm text-neutral-500">
+              Building brands. Driving growth.
+            </p>
           </div>
+
+          <div>
+            <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-neutral-500">
+              Services
+            </p>
+            <ul className="mt-4 space-y-2.5">
+              {serviceLinks.map((s) => (
+                <li key={s}>
+                  <a
+                    href="#services"
+                    data-testid={`footer-service-${s.toLowerCase().replace(/[^a-z]+/g, "-")}`}
+                    className="text-sm text-neutral-400 transition-colors duration-300 hover:text-white"
+                  >
+                    {s}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div>
+            <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-neutral-500">
+              Company
+            </p>
+            <ul className="mt-4 space-y-2.5">
+              {companyLinks.map((l) => (
+                <li key={l.label}>
+                  <a
+                    href={l.href}
+                    data-testid={`footer-company-${l.label.toLowerCase()}`}
+                    className="text-sm text-neutral-400 transition-colors duration-300 hover:text-white"
+                  >
+                    {l.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div>
+            <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-neutral-500">
+              Connect
+            </p>
+            <ul className="mt-4 space-y-2.5">
+              <li>
+                <a href="#hero" data-testid="footer-connect-instagram" className="flex items-center gap-2 text-sm text-neutral-400 transition-colors duration-300 hover:text-white">
+                  <Instagram size={14} /> Instagram
+                </a>
+              </li>
+              <li>
+                <a href="#hero" data-testid="footer-connect-linkedin" className="flex items-center gap-2 text-sm text-neutral-400 transition-colors duration-300 hover:text-white">
+                  <Linkedin size={14} /> LinkedIn
+                </a>
+              </li>
+              <li>
+                <a href="#hero" data-testid="footer-connect-whatsapp" className="flex items-center gap-2 text-sm text-neutral-400 transition-colors duration-300 hover:text-white">
+                  <MessageCircle size={14} /> WhatsApp
+                </a>
+              </li>
+              <li>
+                <a href="mailto:hello@nymarketing.com" data-testid="footer-connect-email" className="flex items-center gap-2 text-sm text-neutral-400 transition-colors duration-300 hover:text-white">
+                  <Mail size={14} /> Email
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="mt-12 border-t border-neutral-800 pt-6 text-sm text-neutral-500">
+          © 2026 NY Marketing. All rights reserved.
         </div>
       </div>
     </footer>

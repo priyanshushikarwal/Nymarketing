@@ -36,13 +36,10 @@ body::after {
         @apply font-mono text-[11px] font-semibold uppercase tracking-[0.25em] text-neutral-500;
     }
     .btn-pill {
-        @apply inline-flex items-center gap-2 rounded-full bg-neutral-950 px-6 py-3 text-sm font-semibold text-white transition-colors duration-300 hover:bg-[#FF4D2D];
+        @apply inline-flex items-center gap-2 rounded-full bg-neutral-950 px-6 py-3 text-sm font-semibold text-white transition-colors duration-300 hover:bg-[#16A34A];
     }
-    .btn-pill-light {
-        @apply inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-semibold text-neutral-950 transition-colors duration-300 hover:bg-[#FF4D2D] hover:text-white;
-    }
-    .btn-pill-outline {
-        @apply inline-flex items-center gap-2 rounded-full border border-neutral-600 px-6 py-3 text-sm font-semibold text-white transition-colors duration-300 hover:border-white hover:bg-white hover:text-neutral-950;
+    .btn-pill-dark-outline {
+        @apply inline-flex items-center gap-2 rounded-full border border-neutral-900 px-6 py-3 text-sm font-semibold text-neutral-950 transition-colors duration-300 hover:bg-neutral-950 hover:text-white;
     }
 }
 
@@ -73,23 +70,30 @@ body::after {
 }
 
 .orb-core {
-    background: radial-gradient(circle at 35% 30%, #FFE3B3 0%, #FF7A3C 22%, #FF2A85 55%, #7B2CBF 88%, #2A0A4A 100%);
+    background: radial-gradient(circle at 35% 30%, #D1FAE5 0%, #34D399 24%, #10B981 50%, #065F46 80%, #022C22 100%);
     box-shadow:
-        0 0 50px rgba(255, 42, 133, 0.55),
-        0 0 120px rgba(255, 94, 58, 0.35),
-        inset -12px -14px 40px rgba(20, 0, 40, 0.5);
+        0 0 50px rgba(16, 185, 129, 0.5),
+        0 0 120px rgba(52, 211, 153, 0.3),
+        inset -12px -14px 40px rgba(2, 44, 34, 0.55);
     animation: orb-pulse 6s ease-in-out infinite;
 }
 
 .orb-mini {
-    background: radial-gradient(circle at 35% 30%, #FF7A3C 0%, #FF2A85 60%, #7B2CBF 100%);
-    box-shadow: 0 0 18px rgba(255, 42, 133, 0.5);
+    background: radial-gradient(circle at 35% 30%, #34D399 0%, #10B981 55%, #065F46 100%);
+    box-shadow: 0 0 18px rgba(16, 185, 129, 0.5);
 }
 
 .orb-mesh {
     background:
-        radial-gradient(ellipse at top right, rgba(255, 77, 45, 0.16), transparent 60%),
-        radial-gradient(ellipse at bottom left, rgba(124, 58, 237, 0.22), transparent 70%);
+        radial-gradient(ellipse at top right, rgba(16, 185, 129, 0.16), transparent 60%),
+        radial-gradient(ellipse at bottom left, rgba(6, 95, 70, 0.35), transparent 70%);
+}
+
+.work-thumb {
+    background:
+        radial-gradient(ellipse at 20% 20%, rgba(52, 211, 153, 0.35), transparent 55%),
+        radial-gradient(ellipse at 80% 80%, rgba(16, 185, 129, 0.22), transparent 60%),
+        #0D0D0E;
 }
 
 @keyframes star-twinkle {

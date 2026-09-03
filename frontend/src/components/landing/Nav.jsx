@@ -5,8 +5,9 @@ import { easeOut } from "./motion-primitives";
 
 const links = [
   { label: "Services", href: "#services", testid: "nav-link-services" },
-  { label: "Results", href: "#results", testid: "nav-link-results" },
-  { label: "Stories", href: "#stories", testid: "nav-link-stories" },
+  { label: "Work", href: "#work", testid: "nav-link-work" },
+  { label: "About", href: "#about", testid: "nav-link-about" },
+  { label: "Process", href: "#process", testid: "nav-link-process" },
   { label: "Contact", href: "#contact", testid: "nav-link-contact" },
 ];
 
@@ -35,8 +36,8 @@ export default function Nav() {
           data-testid="nav-logo"
           className="font-display text-lg font-extrabold tracking-tight"
         >
-          ny.marketinggroups
-          <span className="text-[#FF4D2D]">.</span>
+          NY Marketing
+          <span className="text-[#16A34A]">.</span>
         </a>
 
         <nav className="hidden items-center gap-8 lg:flex">
@@ -58,7 +59,8 @@ export default function Nav() {
             data-testid="nav-demo-button"
             className="btn-pill hidden !px-5 !py-2.5 sm:inline-flex"
           >
-            Schedule a Demo
+            Get a Free Strategy Call
+            <ArrowUpRight size={15} />
           </a>
           <button
             data-testid="nav-menu-toggle"
@@ -103,7 +105,8 @@ export default function Nav() {
                 onClick={() => setOpen(false)}
                 className="btn-pill mt-3 justify-center"
               >
-                Schedule a Demo
+                Get a Free Strategy Call
+                <ArrowUpRight size={15} />
               </a>
             </div>
           </motion.nav>

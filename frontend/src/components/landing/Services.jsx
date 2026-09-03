@@ -4,27 +4,33 @@ import { FadeUp } from "./motion-primitives";
 const services = [
   {
     number: "01",
-    title: "AI Performance Marketing",
-    tag: "ROAS Maximizer",
-    desc: "Predictive audience targeting and real-time creative optimization across Meta, Google & TikTok ads generating 4.8x average ROAS.",
+    title: "Social Media Marketing",
+    desc: "Build an active, recognizable presence with content that attracts, engages and converts.",
   },
   {
     number: "02",
-    title: "Search Engine Dominance",
-    tag: "Jaipur & Global",
-    desc: "Hyper-local Jaipur and pan-India SEO domination with generative AI search overview ranking strategies.",
+    title: "Performance Marketing",
+    desc: "Meta and Google campaigns built around measurable business outcomes.",
   },
   {
     number: "03",
-    title: "High-Conversion Web & UI/UX",
-    tag: "Award Standard",
-    desc: "Custom ultra-fast web experiences engineered specifically to turn site traffic into paying leads.",
+    title: "Branding & Creative",
+    desc: "Build a brand people remember — from identity and positioning to campaigns and creative direction.",
   },
   {
     number: "04",
-    title: "Social-First Brand Storytelling",
-    tag: "Viral Creative",
-    desc: "Cinematic video production, short-form reels, and influencer campaigns rooted in Rajasthan's rich storytelling heritage.",
+    title: "Content & Reels",
+    desc: "Scroll-stopping short-form content designed for today's attention economy.",
+  },
+  {
+    number: "05",
+    title: "Website & Landing Pages",
+    desc: "High-converting digital experiences designed to turn visitors into customers.",
+  },
+  {
+    number: "06",
+    title: "AI-Powered Marketing",
+    desc: "Use AI to research faster, create smarter and optimize your marketing workflow.",
   },
 ];
 
@@ -37,39 +43,33 @@ export default function Services() {
     >
       <FadeUp>
         <p className="eyebrow">/01 — What we do</p>
-        <h2 className="mt-3 font-display text-3xl font-bold leading-none tracking-tight text-neutral-900 sm:text-5xl">
-          The Manifesto
+        <h2 className="mt-3 max-w-2xl font-display text-3xl font-bold leading-[1.05] tracking-tight text-neutral-900 sm:text-5xl">
+          Everything Your Brand Needs to Grow.
         </h2>
-        <p className="mt-4 max-w-md text-sm leading-relaxed text-neutral-500 sm:text-base">
-          Four disciplines, one obsession: measurable growth for the boldest brands
-          in Jaipur and beyond.
-        </p>
       </FadeUp>
 
-      <div className="mt-12 sm:mt-16">
+      <div className="mt-12 grid grid-cols-1 gap-5 sm:mt-16 sm:grid-cols-2 lg:grid-cols-3">
         {services.map((s, i) => (
-          <FadeUp key={s.number} delay={i * 0.06}>
+          <FadeUp key={s.number} delay={i * 0.05}>
             <div
               data-testid={`service-card-${s.number}`}
-              className="group grid grid-cols-1 gap-3 border-t border-neutral-200 px-2 py-8 transition-colors duration-300 last:border-b hover:bg-white sm:grid-cols-12 sm:items-center sm:gap-6 sm:px-4 sm:py-10"
+              className="group flex h-full flex-col justify-between gap-10 rounded-3xl border border-neutral-200 bg-white p-7 transition-all duration-300 hover:-translate-y-1.5 hover:border-neutral-900 hover:shadow-xl"
             >
-              <span className="font-mono text-sm font-semibold text-neutral-400 sm:col-span-1">
-                /{s.number}
-              </span>
-              <h3 className="flex items-center gap-3 font-display text-2xl font-bold tracking-tight transition-colors duration-300 group-hover:text-[#FF4D2D] sm:col-span-4 sm:text-3xl">
-                {s.title}
-                <ArrowUpRight
-                  size={22}
-                  className="opacity-0 transition-all duration-300 group-hover:translate-x-1 group-hover:opacity-100"
-                />
-              </h3>
-              <p className="text-sm leading-relaxed text-neutral-500 sm:col-span-5">
-                {s.desc}
-              </p>
-              <div className="flex sm:col-span-2 sm:justify-end">
-                <span className="rounded-full border border-neutral-300 px-3 py-1 font-mono text-[10px] uppercase tracking-widest text-neutral-500">
-                  {s.tag}
+              <div className="flex items-center justify-between">
+                <span className="font-mono text-xs font-semibold text-neutral-400">
+                  /{s.number}
                 </span>
+                <span className="grid h-9 w-9 place-items-center rounded-full border border-neutral-200 text-neutral-400 transition-colors duration-300 group-hover:border-[#16A34A] group-hover:bg-[#16A34A] group-hover:text-white">
+                  <ArrowUpRight size={15} />
+                </span>
+              </div>
+              <div>
+                <h3 className="font-display text-xl font-bold tracking-tight transition-colors duration-300 group-hover:text-[#16A34A]">
+                  {s.title}
+                </h3>
+                <p className="mt-2 text-sm leading-relaxed text-neutral-500">
+                  {s.desc}
+                </p>
               </div>
             </div>
           </FadeUp>

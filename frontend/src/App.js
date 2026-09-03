@@ -3,10 +3,14 @@ import Lenis from "lenis";
 import "@/App.css";
 import Nav from "@/components/landing/Nav";
 import Hero from "@/components/landing/Hero";
-import Marquee from "@/components/landing/Marquee";
+import Trust from "@/components/landing/Trust";
 import Services from "@/components/landing/Services";
+import WhyNY from "@/components/landing/WhyNY";
+import Process from "@/components/landing/Process";
+import Work from "@/components/landing/Work";
 import Stats from "@/components/landing/Stats";
 import Testimonials from "@/components/landing/Testimonials";
+import About from "@/components/landing/About";
 import Footer from "@/components/landing/Footer";
 
 function App() {
@@ -38,14 +42,18 @@ function App() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-[#F9F8F5] text-[#0F0F10] antialiased selection:bg-[#FF4D2D] selection:text-white">
+    <div className="min-h-screen bg-[#F9F8F5] text-[#0F0F10] antialiased selection:bg-[#16A34A] selection:text-white">
       <Nav />
       <main>
         <Hero />
-        <Marquee />
+        <Trust />
         <Services />
+        <WhyNY />
+        <Process />
+        <Work />
         <Stats />
         <Testimonials />
+        <About />
       </main>
       <Footer />
     </div>

@@ -1,7 +1,27 @@
-# PRD — nymarketinggroups Landing Page
+# PRD — NY Marketing Landing Page
 
 ## Original Problem Statement
-Build a landing page based on a reference image (Mark.Media style) for a digital marketing agency — the best digital marketing agency in Jaipur. Mobile-first responsiveness, good animations. User choices: agency name "nymarketinggroups"; full landing page (hero + services + stats + testimonials + contact/footer); buttons only, no contact form.
+Build a landing page based on a reference image (Mark.Media style) for a digital marketing agency in Jaipur. Mobile-first, good animations. REPOSITIONED (2026-07): user asked to keep the premium design but reposition from AI-product feel to a premium modern digital marketing & growth agency — "NY Marketing". Strategy + Creative + Performance + Branding + AI (AI as advantage, not identity). Green (#16A34A) replaced orange/pink accents. No fake stats, testimonials, logos or social proof.
+
+## Architecture
+- Frontend-only React SPA (no backend endpoints; CTAs are mailto/anchor based)
+- Stack: React 19, Tailwind CSS v3, framer-motion 11, lenis smooth scroll, lucide-react
+- Fonts: Bricolage Grotesque (display), Plus Jakarta Sans (body), JetBrains Mono (eyebrows)
+- Components in `/app/frontend/src/components/landing/`: Nav, Hero, Orb (green parallax orb = "The NY Method"), Trust, Services (6 cards), WhyNY (4 cards), Process (5 steps), Work (placeholder case cards, "Your Brand Could Be Next."), Stats (results: Reach/Leads/Conversions/Revenue — no fake numbers), Testimonials (fallback "Great partnerships start with great conversations."), About (+ AI edge card), Footer (final CTA + link columns)
+- Section order: Hero → Trust → Services → Why NY → Process → Work → Results → Testimonials → About → Footer CTA
+
+## Content Rules (user-mandated)
+- No fake statistics, testimonials, client logos, "5k users", "4.9/5" etc.
+- No generic agency clichés ("we are passionate", "next level", "best agency")
+- AI positioned as a capability ("AI-Powered Marketing" service + Our edge card), never the core identity
+
+## Implemented (2026-07)
+- Full repositioning: new navbar (Services/Work/About/Process/Contact + "Get a Free Strategy Call"), hero "We Turn Attention Into Real Business." with green accent + Start Growing / View Our Work CTAs, right rail = Strategy/Creative/Performance pillars, orb recolored emerald, trust strip, 6 service cards, Why NY, 5-step process, Work placeholders, Results without fake metrics, testimonial fallback, About with AI edge card, footer with Services/Company/Connect columns
+
+## Backlog
+- P1: Real email/phone/WhatsApp/social links (currently placeholders: hello@nymarketing.com)
+- P1: Real client logos for trust strip, real testimonials, real metrics, real case studies
+- P2: OG meta + page title + favicon, case study detail pages
 
 ## Architecture
 - Frontend-only React SPA (no backend endpoints used; buttons are mailto/anchor based)

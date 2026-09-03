@@ -50,20 +50,20 @@ export default function OrbCard() {
       ))}
 
       <div className="relative z-10 flex items-center justify-between font-mono text-[10px] uppercase tracking-[0.3em] text-neutral-400">
-        <span>The NY AI Verse</span>
-        <Sparkles size={14} className="text-[#FF2A85]" />
+        <span>The NY Method</span>
+        <Sparkles size={14} className="text-[#34D399]" />
       </div>
 
       <div className="relative z-10 flex flex-1 items-center justify-center py-12">
         <motion.div
           style={{ x: glowX, y: glowY }}
-          className="absolute h-64 w-64 rounded-full bg-[#FF2A85]/30 blur-3xl"
+          className="absolute h-64 w-64 rounded-full bg-[#10B981]/25 blur-3xl"
         />
-        <div className="animate-spin-slow absolute h-[290px] w-[290px] rounded-full border border-pink-400/20 sm:h-[370px] sm:w-[370px]">
-          <span className="absolute -top-1.5 left-1/2 h-3 w-3 -translate-x-1/2 rounded-full bg-[#B026FF] shadow-[0_0_12px_#B026FF]" />
+        <div className="animate-spin-slow absolute h-[290px] w-[290px] rounded-full border border-emerald-400/20 sm:h-[370px] sm:w-[370px]">
+          <span className="absolute -top-1.5 left-1/2 h-3 w-3 -translate-x-1/2 rounded-full bg-[#34D399] shadow-[0_0_12px_#34D399]" />
         </div>
-        <div className="animate-spin-slower absolute h-[215px] w-[215px] rounded-full border border-orange-300/15 sm:h-[270px] sm:w-[270px]">
-          <span className="absolute -right-1 top-1/2 h-2 w-2 -translate-y-1/2 rounded-full bg-[#FF5E3A] shadow-[0_0_10px_#FF5E3A]" />
+        <div className="animate-spin-slower absolute h-[215px] w-[215px] rounded-full border border-emerald-200/15 sm:h-[270px] sm:w-[270px]">
+          <span className="absolute -right-1 top-1/2 h-2 w-2 -translate-y-1/2 rounded-full bg-[#6EE7B7] shadow-[0_0_10px_#6EE7B7]" />
         </div>
         <motion.div
           style={{ x: orbX, y: orbY }}
@@ -74,10 +74,10 @@ export default function OrbCard() {
       <div className="relative z-10 flex items-end justify-between gap-4">
         <div>
           <p className="font-display text-xl font-bold tracking-tight">
-            Marketing, reimagined
+            Brands that get noticed.
           </p>
           <p className="mt-1 text-xs text-neutral-400">
-            Predictive AI · Human creativity · Jaipur born
+            Strategy • Creative • Performance
           </p>
         </div>
       </div>
