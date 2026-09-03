@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
 import { MaskedLine, FadeUp } from "./motion-primitives";
 import OrbCard from "./Orb";
@@ -24,20 +23,7 @@ export default function Hero() {
     <section id="hero" data-testid="hero-section" className="relative overflow-hidden">
       <div className="mx-auto grid max-w-7xl grid-cols-1 gap-6 px-4 pb-14 pt-28 sm:px-8 lg:grid-cols-12 lg:gap-8 lg:pb-20 lg:pt-36">
         <div className="flex flex-col justify-between gap-10 lg:col-span-5">
-          <div className="relative">
-            <motion.div
-              data-testid="hero-creature"
-              initial={{ x: 140, opacity: 0, rotate: 10 }}
-              animate={{ x: 0, opacity: 1, rotate: 0 }}
-              transition={{ delay: 0.85, type: "spring", stiffness: 60, damping: 14 }}
-              className="pointer-events-none absolute right-0 top-0 z-10"
-            >
-              <img
-                src="/assets/turtle.png"
-                alt="Turtle warrior sprinting forward"
-                className="animate-bob h-20 w-28 object-contain mix-blend-multiply sm:h-32 sm:w-48"
-              />
-            </motion.div>
+          <div>
             <h1
               data-testid="hero-headline"
               className="font-display text-5xl font-extrabold leading-[0.98] tracking-tight text-neutral-950 sm:text-6xl lg:text-6xl xl:text-[4rem]"
@@ -79,14 +65,8 @@ export default function Hero() {
           </FadeUp>
         </div>
 
-        <FadeUp delay={0.3} className="relative lg:col-span-4">
+        <FadeUp delay={0.3} className="lg:col-span-4">
           <OrbCard />
-          <img
-            src="/assets/mascot.png"
-            alt="NY Marketing mascot waving with a megaphone"
-            data-testid="hero-mascot"
-            className="animate-bob absolute -right-3 -top-10 z-20 h-24 w-24 rounded-full object-cover shadow-xl ring-2 ring-emerald-400/50 sm:-right-5 sm:-top-12 sm:h-28 sm:w-28"
-          />
         </FadeUp>
 
         <FadeUp delay={0.45} className="lg:col-span-3">

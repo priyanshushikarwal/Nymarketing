@@ -20,13 +20,7 @@ const companyLinks = [
 export default function Footer() {
   return (
     <footer id="contact" data-testid="footer-section" className="scroll-mt-24 bg-[#0D0D0E] text-white">
-      <div className="relative mx-auto max-w-7xl px-4 py-20 sm:px-8 sm:py-28">
-        <img
-          src="/assets/mascot-rocket.png"
-          alt="NY Marketing mascot riding a rocket"
-          data-testid="footer-mascot"
-          className="animate-bob absolute right-6 top-14 hidden h-28 w-28 rounded-full object-cover ring-2 ring-emerald-400/40 sm:right-10 lg:block lg:h-36 lg:w-36"
-        />
+      <div className="mx-auto max-w-7xl px-4 py-20 sm:px-8 sm:py-28">
         <FadeUp>
           <p className="eyebrow !text-neutral-500">/08 — Say hello</p>
         </FadeUp>

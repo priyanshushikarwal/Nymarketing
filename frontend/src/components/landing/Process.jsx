@@ -15,14 +15,8 @@ export default function Process() {
       data-testid="process-section"
       className="mx-auto max-w-7xl scroll-mt-24 px-4 py-20 sm:px-8 sm:py-28"
     >
-      <FadeUp className="relative">
+      <FadeUp>
         <p className="eyebrow">/03 — The NY Growth Process</p>
-        <img
-          src="/assets/turtle.png"
-          alt="Turtle warrior character sprinting forward"
-          data-testid="process-mascot"
-          className="animate-bob pointer-events-none absolute -top-14 right-0 hidden h-36 w-44 object-contain mix-blend-multiply lg:block"
-        />
         <h2 className="mt-3 font-display text-3xl font-bold leading-[1.05] tracking-tight text-neutral-900 sm:text-5xl">
           From first conversation
           <br className="hidden sm:block" /> to measurable growth.

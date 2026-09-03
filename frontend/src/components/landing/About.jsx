@@ -44,27 +44,19 @@ export default function About() {
         <FadeUp delay={0.1} className="mt-14">
           <div
             data-testid="ai-edge-card"
-            className="orb-mesh flex items-center justify-between gap-6 rounded-[2rem] bg-[#0D0D0E] p-8 text-white sm:p-12"
+            className="orb-mesh rounded-[2rem] bg-[#0D0D0E] p-8 text-white sm:p-12"
           >
-            <div>
-              <p className="font-mono text-[11px] font-semibold uppercase tracking-[0.25em] text-[#34D399]">
-                Our edge
-              </p>
-              <h3 className="mt-3 font-display text-2xl font-bold tracking-tight sm:text-4xl">
-                AI-Powered Marketing
-              </h3>
-              <p className="mt-4 max-w-2xl text-sm leading-relaxed text-neutral-400 sm:text-base">
-                We combine human creativity with AI-powered research, automation
-                and optimization to help brands move faster and make smarter
-                marketing decisions.
-              </p>
-            </div>
-            <img
-              src="/assets/mascot.png"
-              alt="NY Marketing mascot"
-              data-testid="about-mascot"
-              className="animate-bob hidden h-28 w-28 shrink-0 rounded-full object-cover ring-2 ring-emerald-400/40 sm:block sm:h-36 sm:w-36"
-            />
+            <p className="font-mono text-[11px] font-semibold uppercase tracking-[0.25em] text-[#34D399]">
+              Our edge
+            </p>
+            <h3 className="mt-3 font-display text-2xl font-bold tracking-tight sm:text-4xl">
+              AI-Powered Marketing
+            </h3>
+            <p className="mt-4 max-w-2xl text-sm leading-relaxed text-neutral-400 sm:text-base">
+              We combine human creativity with AI-powered research, automation
+              and optimization to help brands move faster and make smarter
+              marketing decisions.
+            </p>
           </div>
         </FadeUp>
       </div>

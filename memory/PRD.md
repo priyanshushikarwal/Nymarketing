@@ -37,6 +37,10 @@ Build a landing page based on a reference image (Mark.Media style) for a digital
 - Hero creature moment: turtle warrior springs in beside the headline (Hero.jsx, motion.div spring entrance + animate-bob)
 - ScrollChase.jsx: parrot peeks from right screen edge (x 110%→15%), climbs up the edge as user scrolls (72vh→22vh), hides again before the dark footer; hidden on <md
 
+## Mascots Removed (2026-07, user request)
+- "remove all mascots" — all mascot/creature/loader/scroll-chase visuals removed from Hero, Orb wrapper, Trust, WhyNY, Process, Work, Services (cards back to arrow-circle design), About AI card, Footer, App.js
+- Loader.jsx and ScrollChase.jsx deleted; generated PNGs still in /app/frontend/public/assets/ (unused, kept for possible reuse); gen scripts kept in /app/backend/
+
 ## Architecture
 - Frontend-only React SPA (no backend endpoints used; buttons are mailto/anchor based)
 - Stack: React 19, Tailwind CSS v3, framer-motion 11, lenis (smooth momentum scrolling), lucide-react icons

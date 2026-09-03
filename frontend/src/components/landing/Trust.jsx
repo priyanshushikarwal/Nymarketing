@@ -7,7 +7,7 @@ export default function Trust() {
       className="border-y border-neutral-200 bg-white/60"
     >
       <div className="mx-auto max-w-7xl px-4 py-12 sm:px-8 sm:py-16">
-        <FadeUp className="relative flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between sm:gap-10">
+        <FadeUp className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between sm:gap-10">
           <h2 className="shrink-0 font-display text-2xl font-bold tracking-tight text-neutral-900 sm:text-3xl">
             Built for Ambitious Brands.
           </h2>
@@ -15,12 +15,6 @@ export default function Trust() {
             From startups to growing businesses, we help brands build visibility,
             credibility and sustainable growth.
           </p>
-          <img
-            src="/assets/octopus.png"
-            alt="Octopus character — mastering every marketing channel at once"
-            data-testid="trust-mascot"
-            className="animate-bob pointer-events-none absolute -top-24 right-0 hidden h-32 w-44 object-contain mix-blend-multiply lg:block"
-          />
         </FadeUp>
       </div>
     </section>
