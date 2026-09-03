@@ -27,8 +27,14 @@ export default function WhyNY() {
   return (
     <section data-testid="why-ny-section" className="bg-white">
       <div className="mx-auto max-w-7xl px-4 py-20 sm:px-8 sm:py-28">
-        <FadeUp>
+        <FadeUp className="relative">
           <p className="eyebrow">/02 — Why NY</p>
+          <img
+            src="/assets/mascot-light.png"
+            alt="NY Marketing mascot jumping with joy"
+            data-testid="why-mascot"
+            className="animate-bob absolute right-0 top-0 hidden h-28 w-28 rounded-3xl object-cover shadow-lg lg:block"
+          />
           <h2 className="mt-3 max-w-3xl font-display text-3xl font-bold leading-[1.05] tracking-tight text-neutral-900 sm:text-5xl">
             We Don't Just Make Your Brand Look Good.{" "}
             <span className="text-[#16A34A]">We Make It Work.</span>

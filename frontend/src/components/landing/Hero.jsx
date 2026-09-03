@@ -65,8 +65,14 @@ export default function Hero() {
           </FadeUp>
         </div>
 
-        <FadeUp delay={0.3} className="lg:col-span-4">
+        <FadeUp delay={0.3} className="relative lg:col-span-4">
           <OrbCard />
+          <img
+            src="/assets/mascot.png"
+            alt="NY Marketing mascot waving with a megaphone"
+            data-testid="hero-mascot"
+            className="animate-bob absolute -right-3 -top-10 z-20 h-24 w-24 rounded-full object-cover shadow-xl ring-2 ring-emerald-400/50 sm:-right-5 sm:-top-12 sm:h-28 sm:w-28"
+          />
         </FadeUp>
 
         <FadeUp delay={0.45} className="lg:col-span-3">

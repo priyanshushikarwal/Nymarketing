@@ -23,6 +23,12 @@ Build a landing page based on a reference image (Mark.Media style) for a digital
 - P1: Real client logos for trust strip, real testimonials, real metrics, real case studies
 - P2: OG meta + page title + favicon, case study detail pages
 
+## Mascot (2026-07, client request via Priyanshu)
+- Client feedback (WhatsApp voice note, Hindi): site is good/informative but needs character/sticker-style visuals to be more attractive
+- Generated 3 brand mascots with Gemini Nano Banana (emergentintegrations, EMERGENT_LLM_KEY in backend/.env): charcoal capsule character with emerald lightning badge — /app/frontend/public/assets/mascot.png (megaphone, on hero orb card corner), mascot-light.png (jumping, on Why NY heading), mascot-rocket.png (rocket, on footer CTA)
+- Generator script: /app/backend/gen_mascots.py (rerun to regenerate)
+- .animate-bob keyframes in index.css give all mascots a gentle float
+
 ## Architecture
 - Frontend-only React SPA (no backend endpoints used; buttons are mailto/anchor based)
 - Stack: React 19, Tailwind CSS v3, framer-motion 11, lenis (smooth momentum scrolling), lucide-react icons
