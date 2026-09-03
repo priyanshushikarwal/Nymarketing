@@ -1,0 +1,177 @@
+{
+  "project_info": {
+    "agency_name": "nymarketinggroups",
+    "location": "Jaipur, Rajasthan, India",
+    "tagline": "Marketing Smarter with a Touch of AI",
+    "positioning": "Jaipur's #1 Premier AI-Driven Growth & Creative Marketing Agency",
+    "app_type": "landing_page",
+    "framework_stack": {
+      "react": "^18.x",
+      "styling": "Tailwind CSS v3 + CSS Variables",
+      "motion": "Framer Motion",
+      "scroll": "Lenis Smooth Scroll (@studio-freight/lenis or lenis)",
+      "icons": "Lucide React (@lucide-react)",
+      "components": "Shadcn JS primitives (Accordion, Dialog, Tabs, Tooltip, Sonner)"
+    }
+  },
+  "typography": {
+    "display_font": {
+      "family": "'Syne', 'Plus Jakarta Sans', sans-serif",
+      "hero_title": "text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight leading-[0.98] uppercase text-neutral-950",
+      "section_title": "text-3xl sm:text-5xl font-bold tracking-tight text-neutral-900 leading-none",
+      "card_title": "text-xl sm:text-2xl font-bold tracking-tight text-neutral-900",
+      "google_font_import": "https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap"
+    },
+    "body_font": {
+      "family": "'Plus Jakarta Sans', sans-serif",
+      "hero_lead": "text-base sm:text-lg text-neutral-600 font-normal leading-relaxed max-w-md",
+      "body_regular": "text-sm sm:text-base text-neutral-600 leading-relaxed"
+    },
+    "mono_accent_font": {
+      "family": "'JetBrains Mono', monospace",
+      "eyebrow_label": "text-[11px] sm:text-xs font-mono uppercase tracking-[0.25em] text-neutral-500 font-semibold",
+      "counter_number": "font-mono font-bold text-3xl sm:text-4xl tracking-tighter"
+    }
+  },
+  "colors": {
+    "mode": "Light-first warm editorial alabaster canvas with high-contrast obsidian dark frames and glowing neon accents",
+    "palette": {
+      "canvas_bg": "#F9F8F5",
+      "canvas_card": "#FFFFFF",
+      "dark_card_bg": "#0D0D0E",
+      "dark_card_text": "#F3F4F6",
+      "text_primary": "#0F0F10",
+      "text_secondary": "#52525B",
+      "text_muted": "#A1A1AA",
+      "border_light": "#E4E4E7",
+      "border_dark": "#27272A",
+      "accent_primary": "#FF4D2D",
+      "accent_glow": "#FF2A85",
+      "accent_purple": "#7C3AED",
+      "accent_cyan": "#06B6D4",
+      "badge_bg": "#F1F0EC"
+    },
+    "gradients": {
+      "orb_glow": "radial-gradient(circle at 35% 35%, #FF5E3A 0%, #FF2A85 45%, #7B2CBF 75%, #0D0D0E 100%)",
+      "dark_card_mesh": "radial-gradient(ellipse at top right, rgba(255, 77, 45, 0.15), transparent 60%), radial-gradient(ellipse at bottom left, rgba(124, 58, 237, 0.2), transparent 70%)",
+      "hero_background_subtle": "linear-gradient(180deg, #F9F8F5 0%, #F3F2EC 100%)"
+    }
+  },
+  "hero_layout_architecture": {
+    "style": "Swiss Editorial Grid with Central Glowing Orb Frame & Split Rails",
+    "structure": {
+      "nav_header": "Fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-white/80 border-b border-neutral-200/80 px-4 sm:px-8 py-4 flex justify-between items-center",
+      "hero_grid": "grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-stretch pt-28 pb-16 px-4 sm:px-8 max-w-7xl mx-auto",
+      "left_column": "lg:col-span-5 flex flex-col justify-between py-2 space-y-6",
+      "center_orb_frame": "lg:col-span-4 relative rounded-3xl overflow-hidden bg-[#0D0D0E] p-6 text-white min-h-[380px] sm:min-h-[460px] flex flex-col justify-between shadow-2xl border border-neutral-800 group",
+      "right_column": "lg:col-span-3 flex flex-col justify-between space-y-6 bg-white/60 p-6 rounded-3xl border border-neutral-200/60 backdrop-blur-sm"
+    },
+    "hero_components": {
+      "headline_masked_reveal": "Large bold staggered line reveal animation using framer-motion overflow-hidden wrappers",
+      "center_orb_3d_canvas": "An animated WebGL canvas / Three.js glowing floating mesh sphere or high-fidelity css radial glow orb with pulsing particle aura and floating interactive badge",
+      "expert_avatars_badge": "Avatar cluster with Jaipur agency founders, '+140 Growth Cases', and 4.9/5 star badge",
+      "cta_buttons": "Pill-shaped primary black button with magnetic hover effect and arrow icon transition"
+    }
+  },
+  "sections": [
+    {
+      "id": "hero",
+      "name": "Kinetic Hero Section",
+      "data_testid": "hero-section"
+    },
+    {
+      "id": "client_marquee",
+      "name": "Trusted Brands & Press Marquee",
+      "data_testid": "client-marquee-section",
+      "clients": ["Vectra AI", "Optimal Jaipur", "Grapho Media", "Dexign Studio", "Signet Luxe", "Heritage Crafts"]
+    },
+    {
+      "id": "services",
+      "name": "Numbered Manifesto & Services Matrix",
+      "data_testid": "services-section",
+      "chapters": [
+        {
+          "number": "01",
+          "title": "AI Performance Marketing",
+          "tag": "ROAS Maximizer",
+          "desc": "Predictive audience targeting and real-time creative optimization across Meta, Google & TikTok ads generating 4.8x average ROAS."
+        },
+        {
+          "number": "02",
+          "title": "Search Engine Dominance (SEO)",
+          "tag": "Jaipur & Global",
+          "desc": "Hyper-local Jaipur & Pan-India SEO domination with generative AI search overview ranking strategies."
+        },
+        {
+          "number": "03",
+          "title": "High-Conversion Web & UI/UX",
+          "tag": "Awwwards Standard",
+          "desc": "Custom ultra-fast Webflow & React web experiences engineered specifically to turn site traffic into paying leads."
+        },
+        {
+          "number": "04",
+          "title": "Social First Brand Storytelling",
+          "tag": "Viral Creative",
+          "desc": "Cinematic video production, short-form reels, and influencer campaigns rooted in Rajasthan’s rich storytelling heritage."
+        }
+      ]
+    },
+    {
+      "id": "stats",
+      "name": "Impact Metrics & Growth Proof",
+      "data_testid": "stats-section",
+      "metrics": [
+        {"value": "₹45 Cr+", "label": "Client Revenue Generated"},
+        {"value": "4.8x", "label": "Average Campaign ROAS"},
+        {"value": "98.2%", "label": "Client Retention Rate"},
+        {"value": "140+", "label": "Brands Scaled in Jaipur & Beyond"}
+      ]
+    },
+    {
+      "id": "testimonials",
+      "name": "Client Stories & Interactive Carousel",
+      "data_testid": "testimonials-section",
+      "items": [
+        {
+          "quote": "nymarketinggroups transformed our D2C brand from 10L/mo to 1.2 Cr/mo in under 8 months with their AI ad engine.",
+          "author": "Vikramaditya Rathore",
+          "role": "Founder, Royal Rajputana Heritage D2C",
+          "location": "Jaipur"
+        },
+        {
+          "quote": "The cleanest web design and most aggressive performance marketing team in Rajasthan. Unmatched attention to detail.",
+          "author": "Ananya Sharma",
+          "role": "Chief Marketing Officer, Crafts & Co.",
+          "location": "Jaipur / Mumbai"
+        }
+      ]
+    },
+    {
+      "id": "contact_footer",
+      "name": "CTA Banner & Minimalist Footer",
+      "data_testid": "footer-section",
+      "primary_action": "Schedule a Demo",
+      "secondary_action": "Explore Solutions"
+    }
+  ],
+  "motion_and_effects": {
+    "lenis_smooth_scroll": "Enabled globally in App.js via Lenis instance",
+    "stagger_variants": {
+      "container": "staggerChildren: 0.1, delayChildren: 0.2",
+      "child": "initial: { y: 30, opacity: 0 }, animate: { y: 0, opacity: 1 }, transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] }"
+    },
+    "hover_interactions": "Magnetic pill buttons, orb brightness pulse on hover, subtle 3D card perspective rotate",
+    "marquee": "Infinite smooth CSS marquee loop with flex-row gap-12 pause-on-hover"
+  },
+  "image_urls": {
+    "glowing_orb_abstract": "https://images.unsplash.com/photo-1781193728759-168bc0691e3e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzNTl8MHwxfHNlYXJjaHszfHxnbG93aW5nJTIwb3JiJTIwYWJzdHJhY3R8ZW58MHx8fHwxNzg4NDM1MjEwfDA&ixlib=rb-4.1.0&q=85",
+    "jaipur_heritage_architecture": "https://images.pexels.com/photos/33290417/pexels-photo-33290417.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "agency_team_meeting": "https://images.unsplash.com/photo-1702047063975-0841a0621b5a?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzV8MHwxfHNlYXJjaHw0fHxtb2Rlcm4lMjBtYXJrZXRpbmclMjBhZ2VuY3l8ZW58MHx8fHwxNzg4NDM1MjEwfDA&ixlib=rb-4.1.0&q=85",
+    "city_palace_jaipur": "https://images.pexels.com/photos/32261804/pexels-photo-32261804.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+  },
+  "testing_and_accessibility": {
+    "data_testid_rules": "All interactive elements, buttons, links, tabs, and section containers MUST contain clear data-testid attributes formatted in kebab-case",
+    "contrast_standards": "WCAG AA compliant contrast ratio (minimum 4.5:1 for body text, 3:1 for large display titles)",
+    "responsive_breakpoints": "Mobile first design (sm: 640px, md: 768px, lg: 1024px, xl: 1280px)"
+  }
+}
