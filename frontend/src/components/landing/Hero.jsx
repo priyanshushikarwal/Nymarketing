@@ -24,13 +24,6 @@ export default function Hero() {
       <div className="mx-auto grid max-w-7xl grid-cols-1 gap-6 px-4 pb-14 pt-28 sm:px-8 lg:grid-cols-12 lg:gap-8 lg:pb-20 lg:pt-36">
         <div className="flex flex-col justify-between gap-10 lg:col-span-5">
           <div>
-            <FadeUp delay={0.05}>
-              <div className="mb-6 flex items-center gap-3 font-mono text-[11px] font-semibold uppercase tracking-[0.25em] text-neutral-500">
-                <span className="whitespace-nowrap">Digital Marketing • Branding • Growth</span>
-                <span className="h-px flex-1 bg-neutral-300" />
-                <span>2026</span>
-              </div>
-            </FadeUp>
             <h1
               data-testid="hero-headline"
               className="font-display text-5xl font-extrabold leading-[0.98] tracking-tight text-neutral-950 sm:text-6xl lg:text-6xl xl:text-[4rem]"
