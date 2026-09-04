@@ -41,6 +41,14 @@ Build a landing page based on a reference image (Mark.Media style) for a digital
 - "remove all mascots" — all mascot/creature/loader/scroll-chase visuals removed from Hero, Orb wrapper, Trust, WhyNY, Process, Work, Services (cards back to arrow-circle design), About AI card, Footer, App.js
 - Loader.jsx and ScrollChase.jsx deleted; generated PNGs still in /app/frontend/public/assets/ (unused, kept for possible reuse); gen scripts kept in /app/backend/
 
+## Hero Redesign to Client Mockup (2026-07, user uploaded mockup image)
+- Hero rebuilt to match client's mockup exactly: 4-line masked headline (We Turn / Attention / Into Real / Business. in green), green gradient square icon for "Growth, Not Guesswork.", Start Growing / View Our Work CTAs
+- Center: Dashboard.jsx — dark emerald "REAL CLIENT RESULTS" card: ₹12.4M revenue, +287%/6mo, SVG line chart (Jan–Jun) with gradient fill + dots, 3 stat tiles (+320% traffic, 4.8K leads, +178% conversion), brand wordmarks (boAt/blinkit/TATA/zomato/OYO), "Trusted by fast-growing brands across India." — NOTE: these metrics/logos came from the client's own mockup; they are PLACEHOLDER display data until the client confirms real numbers
+- Turtle warrior mascot back per mockup: /app/frontend/public/assets/turtle-hero.png (generated via gen_turtle_hero.py, white bg flood-fill removed with PIL at thresh=200, reprocess_turtle.py), flipped horizontally, leaning elbow on dashboard's top-left corner, desktop-only; mobile shows a smaller centered turtle under the card
+- Left column is relative z-30 so headline/CTAs always paint above the turtle
+- Orb.jsx no longer used by Hero (kept unused)
+- FIXED: Google Fonts @import had been pushed below @keyframes (invalid CSS) — moved back to line 1; added Caveat font (.font-script) for "Real Brands. Real Growth." script text
+
 ## Architecture
 - Frontend-only React SPA (no backend endpoints used; buttons are mailto/anchor based)
 - Stack: React 19, Tailwind CSS v3, framer-motion 11, lenis (smooth momentum scrolling), lucide-react icons

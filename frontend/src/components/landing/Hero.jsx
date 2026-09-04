@@ -1,6 +1,7 @@
+import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
 import { MaskedLine, FadeUp } from "./motion-primitives";
-import OrbCard from "./Orb";
+import DashboardCard from "./Dashboard";
 
 const pillars = [
   {
@@ -22,15 +23,16 @@ export default function Hero() {
   return (
     <section id="hero" data-testid="hero-section" className="relative overflow-hidden">
       <div className="mx-auto grid max-w-7xl grid-cols-1 gap-6 px-4 pb-14 pt-28 sm:px-8 lg:grid-cols-12 lg:gap-8 lg:pb-20 lg:pt-36">
-        <div className="flex flex-col justify-between gap-10 lg:col-span-5">
+        <div className="relative z-30 flex flex-col justify-between gap-10 lg:col-span-5">
           <div>
             <h1
               data-testid="hero-headline"
               className="font-display text-5xl font-extrabold leading-[0.98] tracking-tight text-neutral-950 sm:text-6xl lg:text-6xl xl:text-[4rem]"
             >
-              <MaskedLine delay={0.15}>We Turn Attention</MaskedLine>
-              <MaskedLine delay={0.27}>Into Real</MaskedLine>
-              <MaskedLine delay={0.39}>
+              <MaskedLine delay={0.15}>We Turn</MaskedLine>
+              <MaskedLine delay={0.25}>Attention</MaskedLine>
+              <MaskedLine delay={0.35}>Into Real</MaskedLine>
+              <MaskedLine delay={0.45}>
                 <span className="text-[#16A34A]">Business.</span>
               </MaskedLine>
             </h1>
@@ -44,7 +46,7 @@ export default function Hero() {
 
           <FadeUp delay={0.6} className="space-y-8">
             <div className="flex items-start gap-4">
-              <div className="orb-mini h-14 w-14 shrink-0 rounded-xl" />
+              <div className="h-14 w-14 shrink-0 rounded-2xl bg-gradient-to-br from-[#34D399] to-[#059669] shadow-lg shadow-emerald-500/30" />
               <div>
                 <p className="font-semibold">Growth, Not Guesswork.</p>
                 <p className="mt-1 max-w-xs text-sm leading-relaxed text-neutral-500">
@@ -65,8 +67,29 @@ export default function Hero() {
           </FadeUp>
         </div>
 
-        <FadeUp delay={0.3} className="lg:col-span-4">
-          <OrbCard />
+        <FadeUp delay={0.3} className="relative lg:col-span-4">
+          <motion.div
+            data-testid="hero-turtle"
+            initial={{ x: -80, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ delay: 0.7, type: "spring", stiffness: 55, damping: 15 }}
+            className="pointer-events-none absolute -left-[290px] bottom-0 z-20 hidden h-[82%] lg:block"
+          >
+            <img
+              src="/assets/turtle-hero.png"
+              alt="NY Marketing turtle warrior leaning on the client results dashboard"
+              className="h-full w-auto -scale-x-100 object-contain drop-shadow-2xl"
+            />
+          </motion.div>
+          <DashboardCard />
+          <motion.img
+            src="/assets/turtle-hero.png"
+            alt="NY Marketing turtle warrior"
+            initial={{ y: 40, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ delay: 0.7, type: "spring", stiffness: 55, damping: 15 }}
+            className="mx-auto -mb-4 mt-6 h-56 w-auto object-contain lg:hidden"
+          />
         </FadeUp>
 
         <FadeUp delay={0.45} className="lg:col-span-3">
