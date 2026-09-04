@@ -28,9 +28,9 @@ export default function DashboardCard() {
       <div className="orb-mesh pointer-events-none absolute inset-0" />
 
       <div className="relative z-10 flex items-start justify-between gap-4">
-        <div className="flex items-center gap-2 pt-1">
+        <div className="flex items-center gap-2 pt-1 lg:pl-[84px]">
           <span className="h-2 w-2 rounded-full bg-[#22C55E] shadow-[0_0_8px_#22C55E]" />
-          <span className="font-mono text-[10px] font-semibold uppercase tracking-[0.25em] text-neutral-300">
+          <span className="whitespace-nowrap font-mono text-[9px] font-semibold uppercase tracking-[0.15em] text-neutral-300">
             Real Client Results
           </span>
         </div>
@@ -42,6 +42,9 @@ export default function DashboardCard() {
       </div>
 
       <div className="relative z-10 mt-6">
+        <span className="absolute right-0 top-1 rounded-full bg-[#16A34A] px-3 py-1.5 font-mono text-xs font-semibold text-white shadow-lg shadow-emerald-500/30">
+          +287%
+        </span>
         <p className="text-sm text-neutral-400">Total Revenue</p>
         <p
           data-testid="dashboard-revenue"
@@ -59,9 +62,6 @@ export default function DashboardCard() {
       </div>
 
       <div className="relative z-10 mt-4">
-        <span className="absolute right-1 top-0 z-10 rounded-full bg-[#16A34A] px-2.5 py-1 font-mono text-[10px] font-semibold text-white shadow-lg shadow-emerald-500/30">
-          +287%
-        </span>
         <svg
           viewBox="0 0 400 150"
           data-testid="dashboard-chart"
@@ -111,7 +111,7 @@ export default function DashboardCard() {
             data-testid={s.testid}
             className="flex flex-col justify-between rounded-xl border border-white/10 bg-white/5 p-3"
           >
-            <p className="text-[10px] leading-tight text-neutral-400">{s.label}</p>
+            <p className="whitespace-nowrap text-[9px] leading-tight text-neutral-400">{s.label}</p>
             <div className="mt-2 flex items-center justify-between gap-1">
               <span className="text-sm font-bold">{s.value}</span>
               <s.icon size={15} className="shrink-0 text-[#22C55E]" />

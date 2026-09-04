@@ -37,7 +37,7 @@ export default function Hero() {
               </MaskedLine>
             </h1>
             <FadeUp delay={0.5}>
-              <p className="mt-5 max-w-md text-base leading-relaxed text-neutral-600">
+              <p className="mt-5 max-w-[340px] text-base leading-relaxed text-neutral-600">
                 Full-service digital marketing for ambitious brands ready to grow,
                 scale and stand out.
               </p>
@@ -49,7 +49,7 @@ export default function Hero() {
               <div className="h-14 w-14 shrink-0 rounded-2xl bg-gradient-to-br from-[#34D399] to-[#059669] shadow-lg shadow-emerald-500/30" />
               <div>
                 <p className="font-semibold">Growth, Not Guesswork.</p>
-                <p className="mt-1 max-w-xs text-sm leading-relaxed text-neutral-500">
+                <p className="mt-1 max-w-[270px] text-sm leading-relaxed text-neutral-500">
                   Strategy, creative and performance marketing designed to move
                   your business forward.
                 </p>
@@ -73,17 +73,17 @@ export default function Hero() {
             initial={{ x: -80, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ delay: 0.7, type: "spring", stiffness: 55, damping: 15 }}
-            className="pointer-events-none absolute -left-[290px] bottom-0 z-20 hidden h-[82%] lg:block"
+            className="pointer-events-none absolute -left-[245px] bottom-2 z-20 hidden h-[108%] w-[320px] lg:block xl:w-[340px]"
           >
             <img
-              src="/assets/turtle-hero.png"
+              src="/assets/turtle-ny.png"
               alt="NY Marketing turtle warrior leaning on the client results dashboard"
-              className="h-full w-auto -scale-x-100 object-contain drop-shadow-2xl"
+              className="h-full w-full object-fill drop-shadow-2xl"
             />
           </motion.div>
           <DashboardCard />
           <motion.img
-            src="/assets/turtle-hero.png"
+            src="/assets/turtle-ny.png"
             alt="NY Marketing turtle warrior"
             initial={{ y: 40, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
