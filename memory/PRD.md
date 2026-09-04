@@ -46,6 +46,14 @@ Build a landing page based on a reference image (Mark.Media style) for a digital
 - Center: Dashboard.jsx — dark emerald "REAL CLIENT RESULTS" card: ₹12.4M revenue, +287%/6mo, SVG line chart (Jan–Jun) with gradient fill + dots, 3 stat tiles (+320% traffic, 4.8K leads, +178% conversion), brand wordmarks (boAt/blinkit/TATA/zomato/OYO), "Trusted by fast-growing brands across India." — NOTE: these metrics/logos came from the client's own mockup; they are PLACEHOLDER display data until the client confirms real numbers
 - Turtle warrior mascot back per mockup: NOW USING THE CLIENT'S OWN UPLOADED IMAGE (already bg-removed): /app/frontend/public/assets/turtle-ny.png (source: user upload "ChatGPT_Image...removebg-preview.png"). Sized to mockup ratios (h 108% of card, head just above card top, hand draped over card's top-left corner, feet at card bottom), no flip needed (arm already points right); desktop-only lg:block, mobile gets smaller centered turtle under the card. Card header label inset (lg:pl-[84px], 9px mono) so the draping hand never covers it; +287% pill sits beside the revenue figure per mockup
 - Left column is relative z-30 so headline/CTAs always paint above the turtle; hero support paragraphs narrowed (340px/270px) so no text tucks under the turtle
+
+## Hero Art-Directed Rebuild v2 (2026-07, detailed spec from user)
+- Goal: reference-matched spacious composition; mascot must NEVER cover headline; mascot overlaps CARD only at its top-left corner (arm drape)
+- Layout: hero + nav container widened to max-w-[88rem]; grid lg:grid-cols-[25%_50.5%_21%] gap-[1.75%]; headline lg:text-[2.9rem] xl:text-[3.5rem] 2xl:text-[3.9rem]
+- Center zone: relative container; turtle h-full aspect-[3/5] object-fill, absolute bottom-0 -left-[6%] (slight squish matches reference); card in-flow at ml-auto mt-[16%] w-[64%] — container height = card + 16% so turtle head rises above card top like the reference
+- Dashboard: revenue block lg:pl-16, chart lg:pl-10, header label lg:pl-[140px] so the draping hand never covers text
+- Mobile order per spec: headline → copy → CTAs → mascot (h-64, in-flow above card) → full-width results card → service card
+- Verified via 4 screenshot iterations; sections below hero untouched
 - Orb.jsx no longer used by Hero (kept unused)
 - FIXED: Google Fonts @import had been pushed below @keyframes (invalid CSS) — moved back to line 1; added Caveat font (.font-script) for "Real Brands. Real Growth." script text
 

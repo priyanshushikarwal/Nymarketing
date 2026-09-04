@@ -28,7 +28,7 @@ export default function DashboardCard() {
       <div className="orb-mesh pointer-events-none absolute inset-0" />
 
       <div className="relative z-10 flex items-start justify-between gap-4">
-        <div className="flex items-center gap-2 pt-1 lg:pl-[84px]">
+        <div className="flex items-center gap-2 pt-1 lg:pl-[140px]">
           <span className="h-2 w-2 rounded-full bg-[#22C55E] shadow-[0_0_8px_#22C55E]" />
           <span className="whitespace-nowrap font-mono text-[9px] font-semibold uppercase tracking-[0.15em] text-neutral-300">
             Real Client Results
@@ -41,7 +41,7 @@ export default function DashboardCard() {
         </p>
       </div>
 
-      <div className="relative z-10 mt-6">
+      <div className="relative z-10 mt-6 lg:pl-16">
         <span className="absolute right-0 top-1 rounded-full bg-[#16A34A] px-3 py-1.5 font-mono text-xs font-semibold text-white shadow-lg shadow-emerald-500/30">
           +287%
         </span>
@@ -61,7 +61,7 @@ export default function DashboardCard() {
         </p>
       </div>
 
-      <div className="relative z-10 mt-4">
+      <div className="relative z-10 mt-4 lg:pl-10">
         <svg
           viewBox="0 0 400 150"
           data-testid="dashboard-chart"

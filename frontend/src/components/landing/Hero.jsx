@@ -22,12 +22,12 @@ const pillars = [
 export default function Hero() {
   return (
     <section id="hero" data-testid="hero-section" className="relative overflow-hidden">
-      <div className="mx-auto grid max-w-7xl grid-cols-1 gap-6 px-4 pb-14 pt-28 sm:px-8 lg:grid-cols-12 lg:gap-8 lg:pb-20 lg:pt-36">
-        <div className="relative z-30 flex flex-col justify-between gap-10 lg:col-span-5">
+      <div className="mx-auto grid max-w-[88rem] grid-cols-1 gap-10 px-5 pb-14 pt-28 sm:px-10 lg:grid-cols-[25%_50.5%_21%] lg:gap-[1.75%] lg:pb-24 lg:pt-40">
+        <div className="relative z-30 flex flex-col justify-between gap-10">
           <div>
             <h1
               data-testid="hero-headline"
-              className="font-display text-5xl font-extrabold leading-[0.98] tracking-tight text-neutral-950 sm:text-6xl lg:text-6xl xl:text-[4rem]"
+              className="font-display text-5xl font-extrabold leading-[0.98] tracking-tight text-neutral-950 sm:text-6xl lg:text-[2.9rem] xl:text-[3.5rem] 2xl:text-[3.9rem]"
             >
               <MaskedLine delay={0.15}>We Turn</MaskedLine>
               <MaskedLine delay={0.25}>Attention</MaskedLine>
@@ -67,13 +67,13 @@ export default function Hero() {
           </FadeUp>
         </div>
 
-        <FadeUp delay={0.3} className="relative lg:col-span-4">
+        <FadeUp delay={0.3} className="relative">
           <motion.div
             data-testid="hero-turtle"
             initial={{ x: -80, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ delay: 0.7, type: "spring", stiffness: 55, damping: 15 }}
-            className="pointer-events-none absolute -left-[245px] bottom-2 z-20 hidden h-[108%] w-[320px] lg:block xl:w-[340px]"
+            className="pointer-events-none absolute bottom-0 -left-[6%] z-20 hidden aspect-[3/5] h-full lg:block"
           >
             <img
               src="/assets/turtle-ny.png"
@@ -81,18 +81,20 @@ export default function Hero() {
               className="h-full w-full object-fill drop-shadow-2xl"
             />
           </motion.div>
-          <DashboardCard />
           <motion.img
             src="/assets/turtle-ny.png"
             alt="NY Marketing turtle warrior"
             initial={{ y: 40, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.7, type: "spring", stiffness: 55, damping: 15 }}
-            className="mx-auto -mb-4 mt-6 h-56 w-auto object-contain lg:hidden"
+            className="mx-auto mt-4 h-64 w-auto object-contain lg:hidden"
           />
+          <div className="relative z-10 mt-6 w-full lg:ml-auto lg:mt-[16%] lg:w-[64%]">
+            <DashboardCard />
+          </div>
         </FadeUp>
 
-        <FadeUp delay={0.45} className="lg:col-span-3">
+        <FadeUp delay={0.45}>
           <div className="flex h-full flex-col justify-between gap-8 rounded-[2rem] border border-neutral-200/70 bg-white/70 p-6 backdrop-blur-sm sm:p-7">
             <div className="space-y-7">
               {pillars.map((p, i) => (

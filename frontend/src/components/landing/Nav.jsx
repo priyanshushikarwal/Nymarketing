@@ -30,7 +30,7 @@ export default function Nav() {
           : "bg-transparent"
       }`}
     >
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-8">
+      <div className="mx-auto flex max-w-[88rem] items-center justify-between px-5 py-4 sm:px-10">
         <a
           href="#hero"
           data-testid="nav-logo"
