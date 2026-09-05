@@ -3,9 +3,24 @@ import { TrendingUp, BarChart3, Users } from "lucide-react";
 const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun"];
 
 const stats = [
-  { label: "Website Traffic", value: "+320%", icon: BarChart3, testid: "dash-stat-traffic" },
-  { label: "Leads Generated", value: "4.8K", icon: Users, testid: "dash-stat-leads" },
-  { label: "Conversion Rate", value: "+178%", icon: TrendingUp, testid: "dash-stat-conversion" },
+  {
+    label: "Website Traffic",
+    value: "+320%",
+    icon: BarChart3,
+    testid: "dash-stat-traffic",
+  },
+  {
+    label: "Leads Generated",
+    value: "4.8K",
+    icon: Users,
+    testid: "dash-stat-leads",
+  },
+  {
+    label: "Conversion Rate",
+    value: "+178%",
+    icon: TrendingUp,
+    testid: "dash-stat-conversion",
+  },
 ];
 
 const brands = ["boAt", "blinkit", "TATA", "zomato", "OYO"];
@@ -27,13 +42,16 @@ export default function DashboardCard() {
     >
       <div className="orb-mesh pointer-events-none absolute inset-0" />
 
+      {/* HEADER */}
       <div className="relative z-10 flex items-start justify-between gap-4">
-        <div className="flex items-center gap-2 pt-1 lg:pl-[140px]">
+  <div className="flex items-center gap-2 pt-1 lg:pl-[80px]">
           <span className="h-2 w-2 rounded-full bg-[#22C55E] shadow-[0_0_8px_#22C55E]" />
+
           <span className="whitespace-nowrap font-mono text-[9px] font-semibold uppercase tracking-[0.15em] text-neutral-300">
             Real Client Results
           </span>
         </div>
+
         <p className="font-script text-right text-xl leading-[1.05] text-[#34D399] sm:text-2xl">
           Real Brands.
           <br />
@@ -41,27 +59,37 @@ export default function DashboardCard() {
         </p>
       </div>
 
-      <div className="relative z-10 mt-6 lg:pl-16">
+      {/* REVENUE */}
+      <div className="relative z-10 mt-6 lg:pl-[80px]">
         <span className="absolute right-0 top-1 rounded-full bg-[#16A34A] px-3 py-1.5 font-mono text-xs font-semibold text-white shadow-lg shadow-emerald-500/30">
           +287%
         </span>
-        <p className="text-sm text-neutral-400">Total Revenue</p>
+
+        <p className="text-sm text-neutral-400">
+          Total Revenue
+        </p>
+
         <p
           data-testid="dashboard-revenue"
           className="mt-1 font-display text-5xl font-extrabold tracking-tight"
         >
           ₹ 12.4M
         </p>
+
         <p className="mt-2 flex items-center gap-2 text-sm">
           <span className="flex items-center gap-1 font-semibold text-[#22C55E]">
             <TrendingUp size={15} />
             +287%
           </span>
-          <span className="text-neutral-500">in 6 months</span>
+
+          <span className="text-neutral-500">
+            in 6 months
+          </span>
         </p>
       </div>
 
-      <div className="relative z-10 mt-4 lg:pl-10">
+      {/* CHART */}
+      <div className="relative z-10 mt-4 lg:pl-[50px]">
         <svg
           viewBox="0 0 400 150"
           data-testid="dashboard-chart"
@@ -70,14 +98,25 @@ export default function DashboardCard() {
         >
           <defs>
             <linearGradient id="revGrad" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0%" stopColor="#22C55E" stopOpacity="0.35" />
-              <stop offset="100%" stopColor="#22C55E" stopOpacity="0" />
+              <stop
+                offset="0%"
+                stopColor="#22C55E"
+                stopOpacity="0.35"
+              />
+
+              <stop
+                offset="100%"
+                stopColor="#22C55E"
+                stopOpacity="0"
+              />
             </linearGradient>
           </defs>
+
           <path
             d="M8 132 C60 128 90 114 160 101 C210 92 220 82 236 75 C280 55 320 42 390 27 L390 150 L8 150 Z"
             fill="url(#revGrad)"
           />
+
           <path
             d="M8 132 C60 128 90 114 160 101 C210 92 220 82 236 75 C280 55 320 42 390 27"
             fill="none"
@@ -85,6 +124,7 @@ export default function DashboardCard() {
             strokeWidth="2.5"
             strokeLinecap="round"
           />
+
           {points.map((p, i) => (
             <circle
               key={i}
@@ -97,6 +137,7 @@ export default function DashboardCard() {
             />
           ))}
         </svg>
+
         <div className="mt-1 flex justify-between font-mono text-[10px] text-neutral-500">
           {months.map((m) => (
             <span key={m}>{m}</span>
@@ -104,6 +145,7 @@ export default function DashboardCard() {
         </div>
       </div>
 
+      {/* STATS */}
       <div className="relative z-10 mt-4 grid grid-cols-3 gap-2.5">
         {stats.map((s) => (
           <div
@@ -111,23 +153,37 @@ export default function DashboardCard() {
             data-testid={s.testid}
             className="flex flex-col justify-between rounded-xl border border-white/10 bg-white/5 p-3"
           >
-            <p className="whitespace-nowrap text-[9px] leading-tight text-neutral-400">{s.label}</p>
+            <p className="whitespace-nowrap text-[9px] leading-tight text-neutral-400">
+              {s.label}
+            </p>
+
             <div className="mt-2 flex items-center justify-between gap-1">
-              <span className="text-sm font-bold">{s.value}</span>
-              <s.icon size={15} className="shrink-0 text-[#22C55E]" />
+              <span className="text-sm font-bold">
+                {s.value}
+              </span>
+
+              <s.icon
+                size={15}
+                className="shrink-0 text-[#22C55E]"
+              />
             </div>
           </div>
         ))}
       </div>
 
+      {/* BRANDS */}
       <div className="relative z-10 mt-auto pt-6">
         <div className="flex items-center justify-between gap-3 border-t border-white/10 pt-4 text-neutral-300">
           {brands.map((b) => (
-            <span key={b} className="font-display text-sm font-bold sm:text-base">
+            <span
+              key={b}
+              className="font-display text-sm font-bold sm:text-base"
+            >
               {b}
             </span>
           ))}
         </div>
+
         <p className="mt-3 text-center text-[11px] text-neutral-500">
           Trusted by fast-growing brands across India.
         </p>
