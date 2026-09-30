@@ -118,7 +118,7 @@ export default function Hero() {
             >
               <img
                 src="/assets/turtle-ny.png"
-                alt="NY Marketing turtle warrior"
+                alt="NyMarketingGroups turtle warrior"
                 className="h-full w-auto object-contain object-bottom drop-shadow-2xl"
               />
             </motion.div>

@@ -7,12 +7,12 @@ export default function About() {
     <section id="about" data-testid="about-section" className="scroll-mt-24 bg-white">
       <div className="mx-auto max-w-7xl px-4 py-20 sm:px-8 sm:py-28">
         <FadeUp>
-          <p className="eyebrow">/07 — About NY Marketing</p>
+          <p className="eyebrow">/07 — About NyMarketingGroups</p>
           <h2 className="mt-3 max-w-3xl font-display text-3xl font-bold leading-[1.05] tracking-tight text-neutral-900 sm:text-5xl">
             We're Not Just Another Marketing Agency.
           </h2>
           <p className="mt-5 max-w-xl text-sm leading-relaxed text-neutral-500 sm:text-base">
-            NY Marketing is a modern growth agency helping ambitious businesses
+            NyMarketingGroups is a modern growth agency helping ambitious businesses
             build memorable brands, reach the right audience and turn attention
             into measurable business growth.
           </p>

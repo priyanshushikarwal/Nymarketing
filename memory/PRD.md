@@ -19,7 +19,7 @@ Build a landing page based on a reference image (Mark.Media style) for a digital
 - Full repositioning: new navbar (Services/Work/About/Process/Contact + "Get a Free Strategy Call"), hero "We Turn Attention Into Real Business." with green accent + Start Growing / View Our Work CTAs, right rail = Strategy/Creative/Performance pillars, orb recolored emerald, trust strip, 6 service cards, Why NY, 5-step process, Work placeholders, Results without fake metrics, testimonial fallback, About with AI edge card, footer with Services/Company/Connect columns
 
 ## Backlog
-- P1: Real email/phone/WhatsApp/social links (currently placeholders: hello@nymarketing.com)
+- P1: Real email/phone/WhatsApp/social links (currently placeholders: hello@NyMarketingGroups.com)
 - P1: Real client logos for trust strip, real testimonials, real metrics, real case studies
 - P2: OG meta + page title + favicon, case study detail pages
 

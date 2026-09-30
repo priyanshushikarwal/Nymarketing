@@ -41,7 +41,7 @@ export default function Footer() {
 
         <FadeUp delay={0.45} className="mt-10 flex flex-wrap items-center gap-5">
           <a
-            href="mailto:hello@nymarketing.com?subject=Free%20Strategy%20Call"
+            href="mailto:hello@NyMarketingGroups.com?subject=Free%20Strategy%20Call"
             data-testid="footer-cta-button"
             className="inline-flex items-center gap-2 rounded-full bg-[#16A34A] px-6 py-3 text-sm font-semibold text-white transition-colors duration-300 hover:bg-[#15803D]"
           >
@@ -56,7 +56,7 @@ export default function Footer() {
         <div className="mt-20 grid grid-cols-2 gap-10 border-t border-neutral-800 pt-12 sm:grid-cols-4">
           <div className="col-span-2 sm:col-span-1">
             <p className="font-display text-lg font-extrabold tracking-tight">
-              NY Marketing<span className="text-[#22C55E]">.</span>
+              NyMarketingGroups<span className="text-[#22C55E]">.</span>
             </p>
             <p className="mt-2 text-sm text-neutral-500">
               Building brands. Driving growth.
@@ -122,7 +122,7 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="mailto:hello@nymarketing.com" data-testid="footer-connect-email" className="flex items-center gap-2 text-sm text-neutral-400 transition-colors duration-300 hover:text-white">
+                <a href="mailto:hello@NyMarketingGroups.com" data-testid="footer-connect-email" className="flex items-center gap-2 text-sm text-neutral-400 transition-colors duration-300 hover:text-white">
                   <Mail size={14} /> Email
                 </a>
               </li>
@@ -131,7 +131,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-12 border-t border-neutral-800 pt-6 text-sm text-neutral-500">
-          © 2026 NY Marketing. All rights reserved.
+          © 2026 NyMarketingGroups. All rights reserved.
         </div>
       </div>
     </footer>

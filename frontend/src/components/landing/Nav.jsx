@@ -36,7 +36,7 @@ export default function Nav() {
           data-testid="nav-logo"
           className="font-display text-lg font-extrabold tracking-tight"
         >
-          NY Marketing
+          NyMarketingGroups
           <span className="text-[#16A34A]">.</span>
         </a>
 
